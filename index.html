@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="estilos.css" rel="stylesheet" type="text/css"/>
+
+<script src="js/funciones.js" type="text/x-javascript">
+</script>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body>
+<div data-role="page" id="page">
+  <div data-role="header">
+    <h1>CLACULADORA PROTOTIPO</h1>
+  </div>
+  <div data-role="content" style="background-image:url(imagenes/carro.gif)" class="negritas">
+<table width="100%">
+ <tr>
+    <td><label>Numerado:</label></td>
+	<td><input type="number" id="N1" value=""</td>
+ 
+    <td></td>
+    <td><input type="number" id="N2" value=""</td>
+ </tr>
+ <tr>
+ 	<td></td>
+    <td><hr class="lineas"></td>
+    <td><img id="operador" src="imagenes/capi.jpg" width="30" height="30"></td>
+    <td><hr class="lineas"></td>
+ </tr>
+  <tr>
+    <td><label>Denominador:</label></td>
+	<td><input type="number" id="D1" value=""</td>
+ 
+    <td></td>
+    <td><input type="number" id="D2" value=""</td>
+ </tr>
+ 
+ <tr>
+ 	<td colspan="4"><hr class="lineas"></td>
+ </tr>
+
+
+ </table>
+ 
+ <div class="divresultado">
+ 	<table width="100%">
+    <tr>
+    	<td><label id="lblresultado" class="divresultado">Resultado</label></td>
+    </tr>
+    <tr>
+    <td><input type="number" id="RN" value=""></td>
+    </tr>
+    <tr>
+    <td><hr id="hrlinea" class="lineas"></td>
+    </tr>
+    
+    <tr>
+    <td><input type="number" id="RD" value=""></td>
+    </tr>
+    
+    </table>
+ </div>
+ 
+ <div  data-role="controlgroup" data-type="horizontal">
+   <button onClick="Resolver('+');">SUMA</button>
+   <button onClick="Resolver('-');">RESTA</button>
+   <button onClick="Resolver('*');">MULTIPLICAR</button>
+   <button onClick="Resolver('/');">DIVIDIR</button>
+   <button onClick="Resolver('b');">BORRAR</button>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+</div> 
+
+
+
+
+</body>
+</html>

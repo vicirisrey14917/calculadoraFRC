@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.negritas{
+	font-weight:bold;
+	}
+
+
+.lineas{
+	height:4px;
+	background-color:#006;
+	}
+
+.divresultado{
+	margin-left:25%;
+	margin-right:25%;
+	text-align:center;
+	}
+.boton{
+	background-color:#090;
+     }
